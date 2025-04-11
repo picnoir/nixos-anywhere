@@ -683,7 +683,11 @@ runDisko() {
   fi
 
   step Formatting hard drive with disko
+  echo "----------------------"
+  runSsh "ip addr"
+  echo "----------------------"
   runSsh "$diskoScript"
+
 }
 
 nixosInstall() {
